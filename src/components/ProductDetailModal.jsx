@@ -62,7 +62,7 @@ const ProductDetailModal = ({ product, onClose }) => {
               disabled={inCart}
             >
               <i className={inCart ? "fas fa-check" : "fas fa-cart-plus"}></i> 
-              {inCart ? ' Already in Cart' : ` Add to Cart (${quantity})`}
+              {inCart ? ' Already in Cart' : ` Add to Cart`}
             </button>
           </div>
         </div>
