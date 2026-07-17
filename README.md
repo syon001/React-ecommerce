@@ -1,16 +1,30 @@
-# React + Vite
+# 🛍️ ShopDestination – E-Commerce Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, responsive e‑commerce web application built with React and Redux. ShopDestination lets users browse a rich product catalog, filter and sort items, manage a wishlist, and maintain a shopping cart with real‑time total calculation – all powered by a live product API.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Product listing** – Grid view with images, titles, prices, ratings, and original price (if discounted)  
+- **Search** – Filter products by title or category in real‑time  
+- **Category filter** – Dropdown to narrow products by category  
+- **Sorting** – Sort by price (low‑to‑high / high‑to‑low) or average rating  
+- **Wishlist** – Save favorite items with a heart toggle; badge count updates instantly  
+- **Shopping cart** – Add/remove items, adjust quantities, and see the total sum update live  
+- **Cart badge** – Shows the number of distinct products, not total quantity  
+- **Product detail modal** – Click any product to view full description, larger image, wishlist toggle, and quantity selector (disables “Add to Cart” if already in cart)  
+- **Pagination** – Products are paginated (6 per page) with numeric page controls  
+- **Promotional banner** – Displays upcoming offers on the home page  
+- **Fully responsive** – Optimized for desktop, tablet, and mobile devices  
+- **State management** – Redux Toolkit with slices for products, cart, wishlist, and filters  
+- **Async data fetching** – Retrieves products from the [DummyJSON API](https://dummyjson.com/products) using `createAsyncThunk`
 
-## React Compiler
+## 🧰 Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- **React 18** – UI library with functional components and hooks  
+- **Redux Toolkit** – State management with slices, actions, and memoized selectors  
+- **React‑Redux** – Connecting React components to the Redux store  
+- **Axios** (or Fetch) – HTTP client for API requests  
+- **CSS3** – Custom styles with flexbox, grid, animations, and glass‑morphism  
+- **Font Awesome** – Icon library for a polished UI  
+- **Vite** – Fast build tool and development server  
+- **DummyJSON API** – Provides realistic product data (100+ items)
