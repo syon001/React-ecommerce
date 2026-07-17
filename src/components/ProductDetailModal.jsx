@@ -49,12 +49,12 @@ const ProductDetailModal = ({ product, onClose }) => {
             </button>
 
             {/* Quantity selector – disabled if already in cart */}
-            <div className="modal-quantity">
+            {/* <div className="modal-quantity">
               <label>Quantity:</label>
               <button onClick={() => setQuantity(Math.max(1, quantity - 1))} disabled={inCart}>-</button>
               <span>{quantity}</span>
               <button onClick={() => setQuantity(quantity + 1)} disabled={inCart}>+</button>
-            </div>
+            </div> */}
 
             <button 
               className={`modal-add-btn ${inCart ? 'in-cart' : ''}`}
